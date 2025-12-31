@@ -1,0 +1,76 @@
+{
+  "intents": [
+    {
+      "tag": "admission",
+      "patterns": [
+        "How to apply?",
+        "Admission process?",
+        "How to join college?",
+        "Steps for admission"
+      ],
+      "responses": [
+        "You can apply through the official college website during admission season."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "What is the fee structure?",
+        "How can we pay the fee?",
+        "Is there any fee reduction?",
+        "Can we pay fees online?"
+      ],
+      "responses": [
+        "The fee structure depends on the course. Fees can be paid online or offline."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "Average package?",
+        "Highest package?",
+        "From which year placements start?",
+        "Are placement trainings provided?"
+      ],
+      "responses": [
+        "Placements start from final year. Training is provided for eligible students."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "When are exams?",
+        "How many exams per year?",
+        "Can exams be rescheduled?",
+        "What happens in case of malpractice?"
+      ],
+      "responses": [
+        "Exams are conducted every semester. Malpractice leads to strict action."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "Is hostel available?",
+        "What is hostel fee?",
+        "What are hostel rules?",
+        "How is the food?"
+      ],
+      "responses": [
+        "Hostel is available with separate facilities for boys and girls."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "College phone number?",
+        "How to contact college?",
+        "Admission office contact?",
+        "College email id?"
+      ],
+      "responses": [
+        "You can contact the college through the official phone number or email."
+      ]
+    }
+  ]
+}
