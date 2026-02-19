@@ -11,7 +11,6 @@ body {
     padding: 0;
 }
 
-/* Demo Website Content */
 .content {
     padding: 40px;
     min-height: 100vh;
@@ -84,7 +83,7 @@ body {
     align-self: flex-start;
 }
 
-/* Input Area */
+/* Input */
 .chat-input {
     display: flex;
     border-top: 1px solid #ddd;
@@ -110,14 +109,11 @@ body {
 
 <div class="content">
     <h1>Welcome to MRECW College</h1>
-    <p>This is your official website page.</p>
-    <p>Scroll and explore the website content...</p>
+    <p>This is your college website page.</p>
 </div>
 
-<!-- Chat Button -->
 <button class="chat-toggle" onclick="toggleChat()">💬</button>
 
-<!-- Chat Window -->
 <div class="chat-container" id="chatContainer">
     <div class="chat-header">
         MRECW Chatbot 🤖
@@ -155,10 +151,10 @@ function sendMessage() {
     addMessage(text, "user");
     input.value = "";
 
-    let reply = "Sorry, I didn’t understand that. Please ask about placements, courses, or highest package.";
+    let reply = "Sorry, I didn’t understand that.";
 
     if (text.includes("hi") || text.includes("hello")) {
-        reply = "Hello 👋 Welcome to MRECW! How can I help you?";
+        reply = "Hello 👋 Welcome to MRECW!";
     }
     else if (text.includes("highest package")) {
         reply = "The highest package offered is ₹32 LPA by Visa.";
@@ -167,7 +163,7 @@ function sendMessage() {
         reply = "1100+ placements. Top recruiters: Amazon, Infosys, Deloitte.";
     }
     else if (text.includes("courses")) {
-        reply = "We offer B.Tech programs in CSE, ECE, EEE, IT, AIML, Cyber Security, and Data Science.";
+        reply = "We offer B.Tech in CSE, ECE, EEE, IT, AIML, Cyber Security, and Data Science.";
     }
 
     setTimeout(() => {
