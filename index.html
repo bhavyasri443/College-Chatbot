@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MRECW Website</title>
+<title>MRECW College Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-/* Chat Icon Button */
+/* Floating Chat Button */
 .chat-toggle {
     position: fixed;
     bottom: 20px;
@@ -57,7 +57,7 @@ body {
     font-weight: bold;
 }
 
-/* Messages */
+/* Chat Messages */
 .chat-box {
     flex: 1;
     padding: 10px;
@@ -84,7 +84,7 @@ body {
     align-self: flex-start;
 }
 
-/* Input */
+/* Input Area */
 .chat-input {
     display: flex;
     border-top: 1px solid #ddd;
@@ -110,11 +110,11 @@ body {
 
 <div class="content">
     <h1>Welcome to MRECW College</h1>
-    <p>This is your college website page.</p>
+    <p>This is your official website page.</p>
     <p>Scroll and explore the website content...</p>
 </div>
 
-<!-- Chat Icon -->
+<!-- Chat Button -->
 <button class="chat-toggle" onclick="toggleChat()">💬</button>
 
 <!-- Chat Window -->
@@ -126,7 +126,7 @@ body {
     <div class="chat-box" id="chatBox"></div>
 
     <div class="chat-input">
-        <input type="text" id="userInput" placeholder="Type your message..." />
+        <input type="text" id="userInput" placeholder="Ask me something..." />
         <button onclick="sendMessage()">Send</button>
     </div>
 </div>
@@ -149,24 +149,30 @@ function addMessage(text, className) {
 
 function sendMessage() {
     const input = document.getElementById("userInput");
-    const text = input.value.trim();
+    const text = input.value.trim().toLowerCase();
     if (!text) return;
 
     addMessage(text, "user");
     input.value = "";
 
-    fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text })
-    })
-    .then(res => res.json())
-    .then(data => {
-        addMessage(data.reply, "bot");
-    })
-    .catch(() => {
-        addMessage("Server error.", "bot");
-    });
+    let reply = "Sorry, I didn’t understand that. Please ask about placements, courses, or highest package.";
+
+    if (text.includes("hi") || text.includes("hello")) {
+        reply = "Hello 👋 Welcome to MRECW! How can I help you?";
+    }
+    else if (text.includes("highest package")) {
+        reply = "The highest package offered is ₹32 LPA by Visa.";
+    }
+    else if (text.includes("placements")) {
+        reply = "1100+ placements. Top recruiters: Amazon, Infosys, Deloitte.";
+    }
+    else if (text.includes("courses")) {
+        reply = "We offer B.Tech programs in CSE, ECE, EEE, IT, AIML, Cyber Security, and Data Science.";
+    }
+
+    setTimeout(() => {
+        addMessage(reply, "bot");
+    }, 500);
 }
 
 </script>
