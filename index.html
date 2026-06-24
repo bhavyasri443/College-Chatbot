@@ -202,44 +202,56 @@ function addMessage(text,type){
 
     chatBox.scrollTop=chatBox.scrollHeight;
 }
+let knowledge = [];
+
+fetch("college_data.json")
+.then(response => response.json())
+.then(data => {
+    knowledge = data.knowledge;
+});
 
 async function sendMessage(){
 
-    const input=document.getElementById("userInput");
+    const input = document.getElementById("userInput");
 
-    const message=input.value.trim();
+    const message = input.value.trim();
 
-    if(message==="") return;
+    if(message === "") return;
 
     addMessage(message,"user");
 
-    input.value="";
+    input.value = "";
 
-    try{
+    const text = message.toLowerCase();
 
-        const response=await fetch("/chat",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify({
-                message:message
-            })
-        });
+    let bestAnswer = null;
+    let bestScore = 0;
 
-        const data=await response.json();
+    for(const item of knowledge){
 
-        addMessage(data.reply,"bot");
+        let score = 0;
 
+        for(const keyword of item.keywords){
+
+            if(text.includes(keyword.toLowerCase())){
+                score++;
+            }
+        }
+
+        if(score > bestScore){
+            bestScore = score;
+            bestAnswer = item.answer;
+        }
     }
-    catch(error){
 
+    if(bestAnswer){
+        addMessage(bestAnswer,"bot");
+    }
+    else{
         addMessage(
-            "Server Error. Please check if FastAPI is running.",
+            "Sorry, I couldn't find that information. Please ask about courses, placements, hostel, library, admissions or contact details.",
             "bot"
         );
-
-        console.log(error);
     }
 }
 
