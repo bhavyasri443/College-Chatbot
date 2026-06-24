@@ -204,10 +204,18 @@ function addMessage(text,type){
 }
 let knowledge = [];
 
-fetch("college_data.json")
-.then(response => response.json())
+fetch("./college_data.json")
+.then(response => {
+    if (!response.ok) {
+        throw new Error("Could not load JSON file");
+    }
+    return response.json();
+})
 .then(data => {
     knowledge = data.knowledge;
+})
+.catch(error => {
+    console.error(error);
 });
 
 async function sendMessage(){
