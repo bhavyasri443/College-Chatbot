@@ -1,0 +1,180 @@
+{
+  "knowledge": [
+    {
+      "keywords": ["principal", "college principal", "head of college", "principal name"],
+      "answer": "Dr. Y. Madhaveelatha is the Principal of Malla Reddy Engineering College for Women (MRECW)."
+    },
+
+    {
+      "keywords": ["chairman", "founder", "founder chairman", "malla reddy founder"],
+      "answer": "Sri Ch. Malla Reddy is the Founder Chairman."
+    },
+
+    {
+      "keywords": ["secretary"],
+      "answer": "Sri Ch. Mahender Reddy is the Secretary."
+    },
+
+    {
+      "keywords": ["president"],
+      "answer": "Dr. Ch. Bhadra Reddy is the President."
+    },
+
+    {
+      "keywords": ["placement", "placements", "job", "recruitment", "companies", "campus placements"],
+      "answer": "Students are placed in companies such as Amazon, Visa, Cisco, Infosys, IBM, Deloitte, Cognizant and Accenture. Highest package recorded is 46 LPA."
+    },
+
+    {
+      "keywords": ["highest package", "package", "ctc"],
+      "answer": "Highest package recorded is 46 LPA."
+    },
+
+    {
+      "keywords": ["visa package"],
+      "answer": "Students secured packages up to 32 LPA in Visa."
+    },
+
+    {
+      "keywords": ["cisco package"],
+      "answer": "Students secured packages up to 18 LPA in Cisco."
+    },
+
+    {
+      "keywords": ["hostel", "accommodation", "stay", "hostel facility", "rooms"],
+      "answer": "MRECW provides an exclusive hostel with capacity of 1500 girls. Facilities include WiFi, gym, sports, coding lab, GRE training, medical facilities, security and hygienic food."
+    },
+
+    {
+      "keywords": ["wifi", "internet"],
+      "answer": "WiFi facility is available in the hostel."
+    },
+
+    {
+      "keywords": ["medical", "hospital", "ambulance"],
+      "answer": "24/7 medical facilities are available through Malla Reddy Hospital with ambulance service and in-house doctor."
+    },
+
+    {
+      "keywords": ["library", "books", "digital library", "journals"],
+      "answer": "The library contains 64715 volumes, 154 journals, 42122 e-journals and 80 computers."
+    },
+
+    {
+      "keywords": ["address", "location", "college location", "where is mrecw"],
+      "answer": "Maisammaguda, Dhulapally, Post via Kompally, Secunderabad-500100, Telangana."
+    },
+
+    {
+      "keywords": ["contact", "phone", "admission", "admission number"],
+      "answer": "Admissions Contact: 9346118803. Phone Numbers: +91 7207231199 and +91 7207031994."
+    },
+
+    {
+      "keywords": ["cse", "computer science", "cse hod", "head of cse"],
+      "answer": "Dr. Y. Geetha Reddy is the HOD of CSE."
+    },
+
+    {
+      "keywords": ["aiml", "artificial intelligence", "machine learning", "aiml hod"],
+      "answer": "Dr. M. Narendar Mulugu is the HOD of CSE-AIML."
+    },
+
+    {
+      "keywords": ["data science", "ds", "data science hod"],
+      "answer": "Dr. N. Srinivasa Rao is the HOD of CSE-Data Science."
+    },
+
+    {
+      "keywords": ["cyber security", "cyber", "cs", "cyber security hod"],
+      "answer": "Dr. Yasaswini Vanapalli is the HOD of CSE-Cyber Security."
+    },
+
+    {
+      "keywords": ["courses", "branches", "departments", "programs"],
+      "answer": "MRECW offers CSE, CSE-AIML, CSE-DS, CSE-Cyber Security, CSE-IoT, IT, ECE, EEE, M.Tech and MBA programmes."
+    },
+
+    {
+      "keywords": ["autonomous", "ugc"],
+      "answer": "MRECW is an Autonomous Institution under UGC."
+    },
+
+    {
+      "keywords": ["aicte"],
+      "answer": "MRECW is approved by AICTE, New Delhi."
+    },
+
+    {
+      "keywords": ["jntuh", "affiliation", "affiliated"],
+      "answer": "MRECW is affiliated to JNT University Hyderabad."
+    },
+
+    {
+      "keywords": ["naac", "grade"],
+      "answer": "MRECW is accredited by NAAC with A+ Grade."
+    },
+
+    {
+      "keywords": ["nirf", "ranking"],
+      "answer": "MRECW secured NIRF 2025 Rank Band 201-300."
+    },
+
+    {
+      "keywords": ["established", "founded", "started"],
+      "answer": "MRECW was established in 2008."
+    },
+    {
+  "keywords": ["hi", "hello", "hey"],
+  "answer": "Hello 👋 Welcome to MRECW."
+    },
+{
+  "keywords": ["courses", "branches", "programs", "departments"],
+  "answer": "MRECW offers CSE, CSE-AIML, CSE-Data Science, CSE-Cyber Security, CSE-IoT, IT, ECE, EEE, M.Tech and MBA programmes."
+},
+{
+  "keywords": ["cse"],
+  "answer": "CSE department is headed by Dr. Y. Geetha Reddy."
+},
+{
+  "keywords": ["aiml"],
+  "answer": "CSE-AIML department is headed by Dr. M. Narendar Mulugu."
+},
+{
+  "keywords": ["data science", "ds"],
+  "answer": "CSE-Data Science department is headed by Dr. N. Srinivasa Rao."
+},
+{
+  "keywords": ["cyber security", "cyber"],
+  "answer": "CSE-Cyber Security department is headed by Dr. Yasaswini Vanapalli."
+},
+{
+  "keywords": ["ece"],
+  "answer": "Electronics and Communication Engineering (ECE) is offered at MRECW."
+},
+{
+  "keywords": ["eee"],
+  "answer": "Electrical and Electronics Engineering (EEE) is offered at MRECW."
+},
+{
+  "keywords": ["it"],
+  "answer": "Information Technology (IT) is offered at MRECW."
+},
+{
+  "keywords": ["mba"],
+  "answer": "MRECW offers Master of Business Administration (MBA)."
+},
+{
+  "keywords": ["mtech"],
+  "answer": "MRECW offers M.Tech in Computer Science and Engineering and Embedded Systems."
+},
+{
+  "keywords": ["recruiters", "companies"],
+  "answer": "Major recruiters include Amazon, Visa, Cisco, Infosys, IBM, Deloitte, Cognizant, Accenture, KPMG and HCL."
+},
+{
+  "keywords": ["hostel facilities"],
+  "answer": "Hostel facilities include WiFi, Gym, Sports, Medical Support, Coding Lab, GRE Training, Security and Hygienic Food."
+}
+  ]
+}
